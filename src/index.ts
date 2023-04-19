@@ -7,6 +7,11 @@ export type OfferType = {
   signature: Signature
 }
 
-export async function SignOffer(signer: ethers.Signer, offer: OfferType) {
-  return await signOffer(signer, offer.offer, offer.signature, '', 1)
+export async function SignOffer(
+  signer: ethers.Signer,
+  offer: OfferType,
+  renkin: string,
+  chainId: number
+) {
+  return await signOffer(signer, offer.offer, offer.signature, renkin, chainId)
 }

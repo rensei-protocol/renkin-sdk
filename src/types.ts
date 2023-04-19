@@ -27,7 +27,7 @@ export type Offer = {
   blockNum: BigNumberish
   currency: string
   timestamp: BigNumberish
-  extra: Bytes
+  extra: string
 }
 
 export type Signature = {
