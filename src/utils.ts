@@ -31,7 +31,7 @@ export async function signOffer(
   signature: Signature,
   renkin: string,
   chainId: BigNumberish
-): Promise<void> {
+): Promise<string> {
   const encodedOffer: string = ethers.utils.solidityPack(offerParamType, [
     offer.currency,
     offer.principal,
@@ -53,5 +53,5 @@ export async function signOffer(
     chainId,
   ])
   const message = ethers.utils.keccak256(encodedData)
-  signature.signature = await signer.signMessage(ethers.utils.arrayify(message))
+  return await signer.signMessage(ethers.utils.arrayify(message))
 }

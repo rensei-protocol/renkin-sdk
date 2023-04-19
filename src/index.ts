@@ -12,6 +12,6 @@ export async function SignOffer(
   offer: OfferType,
   renkin: string,
   chainId: number
-) {
+): Promise<string> {
   return await signOffer(signer, offer.offer, offer.signature, renkin, chainId)
 }
