@@ -6,8 +6,22 @@
   "repository": "git@github.com:rensei-protocol/renkin-sdk.git",
   "author": "xiaohuo <xiaohuo@voyage.finance>",
   "license": "MIT",
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "tsdx": "^0.14.1"
   },
   "dependencies": {
     "axios": "^0.27.2",
