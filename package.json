@@ -2,9 +2,18 @@
   "name": "renkin-sdk",
   "version": "1.0.0",
   "description": "sdk for intereacting with renkin protocol",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "repository": "git@github.com:rensei-protocol/renkin-sdk.git",
   "author": "xiaohuo <xiaohuo@voyage.finance>",
+  "module": "dist/renkin-sdk.esm.js",
   "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
