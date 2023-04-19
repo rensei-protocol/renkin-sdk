@@ -1,5 +1,5 @@
 {
-  "name": "renkin-sdk",
+  "name": "@renkin/sdk",
   "version": "1.0.0",
   "description": "sdk for intereacting with renkin protocol",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": "git@github.com:rensei-protocol/renkin-sdk.git",
   "author": "xiaohuo <xiaohuo@voyage.finance>",
-  "module": "dist/renkin-sdk.esm.js",
+  "module": "dist/sdk.esm.js",
   "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
