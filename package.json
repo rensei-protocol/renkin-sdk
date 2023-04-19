@@ -1,0 +1,16 @@
+{
+  "name": "renkin-sdk",
+  "version": "1.0.0",
+  "description": "sdk for intereacting with renkin protocol",
+  "main": "index.ts",
+  "repository": "git@github.com:rensei-protocol/renkin-sdk.git",
+  "author": "xiaohuo <xiaohuo@voyage.finance>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ethers": "^5.6.8"
+  }
+}
