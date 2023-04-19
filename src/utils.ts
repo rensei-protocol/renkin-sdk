@@ -25,7 +25,7 @@ export function encodeItemData(data: TokenPair[]): string {
   }
 }
 
-async function signOffer(
+export async function signOffer(
   signer: ethers.Signer,
   offer: Offer,
   signature: Signature,
